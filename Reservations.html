@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <div class="bar">
+        <a href="LogIn.html">Log in</a>
+        <a href="index.html">Home</a>
+        <a href="Pokedex.html">Pokedex</a>
+        <a href="Reservations.html">Reservations</a>
+        <input id="search-bar" type="text" placeholder="Search . . .">
+        <script>
+            var input = document.getElementById("search-bar");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    document.location.href = "SearchResult.html";
+                }
+            });
+        </script>
+    </div>
+    <br />
+    <div class="home-content">
+        <div class="login">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <form id="form" action="index.html">
+                <p id="reservation-title">Your Current Reservations</p>
+                <table class="reservation-result">
+                    <tr>
+                        <th>Hotel</th>
+                        <th>Beds</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                    <tr>
+                        <td>Celadon Hotel</td>
+                        <td>2</td>
+                        <td>09/18/2019</td>
+                        <td>09/23/2019</td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="contact-info">
+        <p>Contact Info</p>
+    </div>
+</body>
+</html>

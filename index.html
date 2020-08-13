@@ -1,0 +1,76 @@
+﻿<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Pokemon Hotels</title>
+  </head>
+
+  <body>
+    <div class="bar">
+	  <a href="LogIn.html">Log in</a>
+	  <a href="#">Home</a>
+	  <a href="Pokedex.html">Pokedex</a>
+	  <input id="search-bar" type="text" placeholder="Search . . .">
+        <script>
+            var input = document.getElementById("search-bar");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    document.location.href = "SearchResult.html";
+                }
+            });
+        </script>
+	</div>
+	<br>
+	<div class="home-content">
+	  <div class="query-box">
+	    <form id="form">
+		  <div class="selection">
+		    <select name="region">
+			  <option value="" selected disabled hidden>Choose Your Region</option>
+			  <option value="kanto">Kanto</option>
+			  <option value="johto">Johto</option>
+			  <option value="hoenn">Hoenn</option>
+			  <option value="sinnoh">Sinnoh</option>
+			  <option value="unova">Unova</option>
+			  <option value="kalos">Kalos</option>
+			  <option value="alola">Alola</option>
+			</select>
+			<select name="hotel">
+			  <option value="" selected disabled hidden>Choose Your Hotel</option>
+			  <option value="celadon_hotel">Celadon Hotel</option>
+			  <option value="resort_gorgeous">Resort Gorgeous</option>
+			  <option value="cove_lily_motel">Cove Lily Motel</option>
+			  <option value="hotel_grand_lake">Hotel Grand Lake</option>
+			  <option value="vertress_hotel">Vertress Hotel</option>
+			  <option value="hotel_cyllage">Hotel Cyllage</option>
+			  <option value="hotel_ambrette">Hotel Ambrette</option>
+			  <option value="hotel_marine_snow">Hotel Marine Snow</option>
+			  <option value="coumarine_hotel">Hotel Coumarine</option>
+			  <option value="couriway_hotel">Couriway Hotel</option>
+			  <option value="hotel_camphrier">Hotel Camphrier</option>
+			  <option value="hano_grand_resort">Hano Grand Resort</option>
+			  <option value="pokemon_paradise_resort">Pokemon Paradise Resort</option>
+			  <option value="hotel_richissime">Hotel Richissime</option>
+			</select>
+			<select name="num_beds">
+			  <option value="" selected disabled hidden>Choose Your Number of Beds</option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="4">4</option>
+			</select>
+		  </div>
+		  <div class="date">
+			<p>Start Date:&nbsp;</p><input type="date" name="start_date">&nbsp;
+			<p>End Date:&nbsp;</p><input type="date" name="end_date">
+		  </div>
+		</form>
+	  </div>
+	</div>
+	<br>
+	<div class="contact-info">
+	  <p>Contact Info</p>
+	</div>
+  </body>
+</html>

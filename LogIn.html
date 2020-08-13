@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Log In</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <div class="bar">
+        <a href="#">Log in</a>
+        <a href="index.html">Home</a>
+        <a href="Pokedex.html">Pokedex</a>
+        <a href="Reservations.html">Reservations</a>
+        <input id="search-bar" type="text" placeholder="Search . . .">
+        <script>
+            var input = document.getElementById("search-bar");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    document.location.href = "SearchResult.html";
+                }
+            });
+        </script>
+    </div>
+    <br />
+    <div class="home-content">
+        <div class="login">
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <form id="form" action="index.html">
+                <br />
+                <p>User name: &nbsp; &nbsp; &nbsp;</p>
+                <input type="text" id="username" pattern=".+" /><br /><br />
+                <p>Password: &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                <input type="password" id="password" pattern=".+"/>
+                <br />
+                <br />
+                <br />
+                <input class= "login_submit" type="submit" name="login" value="Log In"/> <br /><br />
+                <p>If you do not have an account. <a href="SignUp.jsp" style="color: #F1C40F;">Sign up here.</a></p>
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="contact-info">
+        <p>Contact Info</p>
+    </div>
+</body>
+</html>

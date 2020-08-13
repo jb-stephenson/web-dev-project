@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Reservations</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="bar">
+        <a href="Login.html">Log in</a>
+        <a href="index.html">Home</a>
+        <a href="Pokedex.html">Pokedex</a>
+        <input id="search-bar" type="text" placeholder="Search . . .">
+        <script>
+            var input = document.getElementById("search-bar");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    document.location.href = "SearchResult.html";
+                }
+            });
+        </script>
+    </div>
+
+    <!--Title -->
+    <h1 id="reservation-title">Cove Lily Motel</h1>
+    <br />
+    <div class="reservation-main-content">
+        <!--Pic of the place-->
+        <img id="reservation-image" src="images/lilycove2.jpg" alt="Reservation image" height="250" width="250">
+
+        <!--Form with number of rooms and the dates-->
+        <form action="index.html">
+            <fieldset>
+                <legend>Reserve a room at Cove Lily Motel today!</legend>
+                <div class="nameOfField"><label>Check-in date: </label></div>
+                <div class="inputField"><input type="date" id="checkin" style="width:150px;" required /></div>
+                <br />
+                <br />
+                <div class="nameOfField"><label>Check-out date: </label> </div>
+                <div class="inputField"><input type="date" id="checkout" style="width:150px;" required /></div>
+                <br />
+                <br />
+                <div class="nameOfField"><label>Number of Adults:</label></div>
+                <div class="inputField"><input type="text" id="numAdults" style="width:150px;" required pattern="[1-9]{1}" title="Must have one or more adults in a room. Cannot have over 9 adults in one reservation." /></div>
+                <br />
+                <br />
+                <div class="nameOfField"><label>Number of Children:</label></div>
+                <div class="inputField"><input type="text" id="numChildren" style="width:150px;" required pattern="[0-9]{0,1}" title="Cannot have more than 9 children to a room." /></div>
+                <br />
+                <br />
+                <div class="nameOfField"><label>Number of Rooms:</label></div>
+                <div class="inputField"><input type="text" id="numRooms" style="width:150px;" required pattern="[1-5]{1}" title="You can only up to 5 rooms per reservation." /></div>
+                <br />
+                <br />
+                <div class="inputField"><button type="submit" id="submit">Submit</button></div>
+            </fieldset>
+        </form>
+
+        <!--Some reviews of the place -->
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <!--amenities-->
+        <div class="amenities">
+            <p>
+                Amenities
+            </p>
+            <ul>
+                <li>Flexible check-in and check-out</li>
+                <li>Free cancellations at least 24 hours before check-in</li>
+                <li>Pokemon stay for free</li>
+                <li>High-speed Internet</li>
+                <li>Free breakfast</li>
+                <li>Gym</li>
+                <li>Pool</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact-info" style="position:absolute; bottom:0px;">
+        <p>Contact Info</p>
+    </div>
+</body>
+</html>

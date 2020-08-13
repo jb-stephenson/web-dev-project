@@ -1,0 +1,376 @@
+p {
+  text-align: center;
+  font-size: 16px;
+  font-family: "arial";
+}
+input, option, select {
+  font-size: 16px;
+  font-family: "arial";
+ }
+.active, .dot:hover {
+  background-color: #717171;
+}
+.amenities {
+  text-align: left;
+}
+.amenities p {
+  text-align: left;
+  font-family: Arial; 
+  font-size: 18px;
+}
+.bar {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #000000;
+  opacity: 0.85;
+  height: 50px;
+}
+.bar a {
+  border-radius: 10px;
+  float: left;
+  font-size: 20px;
+  font-family: "arial";
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  margin: 0;
+}
+.bar a:hover {
+  background-color: red;
+}
+.caption-text {
+  color: black;
+  font-size: 15px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+.contact-info {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  opacity: 0.85;
+  background-color: #000000;
+}
+.date {
+  width: 560px;
+  margin: auto;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;	
+}
+.evolution {
+  width: 50%;
+  position: relative;
+  margin: auto;  
+  padding-left: 205px;
+}
+.home-content {
+  display: block;
+  width: 97%;
+  height: 635px;
+  padding: 25px;
+  background-image: url("images/pokemon_color_spectrum.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.inputField {
+    padding-right: 1em;
+    float: right;
+    font-size: 16px;
+    font-family: "arial";
+}
+
+.login form {
+	width: 430px;
+	margin-top: 12px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	height: 225px;
+	opacity: 0.85;
+	background-color: #000000;
+}
+
+.login p {
+	margin-left: 5px;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.login_signup form {
+	width: 430px;
+	margin-top: 12px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 25px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	height: 290px;
+	opacity: 0.85;
+	background-color: #000000;
+}
+
+.login_submit {
+	background-color:white;
+	margin-left: 160px;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 3px;
+}
+
+.nameOfField {
+    padding-left: 2em;
+    float: left;
+    font-size: 16px;
+    font-family: "arial";
+    color: #F1C40F;
+}
+
+.nameOfField label{
+    color: black;
+}
+   
+.next {
+  right: 0;
+  border-radius: 0 3px 3px 0;
+}
+.num-text {
+  color: black;
+  font-size: 16px;
+  font-family: "arial";
+  padding: 12px 12px;
+  position: absolute;
+  top: 0;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "arial";
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.pokedex {
+  width: 50%;
+  position: relative;
+  margin: auto;
+}
+.pokedex-form {
+  background-image: url("images/pokedex.png");
+  height: 545px;
+  width: 773px;
+}
+.pokemon-description {
+  width: 50%;
+  position: relative;
+  margin: auto;
+  text-align: left;
+}
+.pokemon-img {
+  display: inline-block;
+  height: 325px;
+  padding: 5px;
+  padding-left: 100px;
+  padding-right: 15px;
+}
+.pokedex-title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: arial;
+}
+.pokemon-stats {
+  display: inline-block;
+  height: auto;
+  width: 450px;
+  position: absolute;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 25px;
+  margin: 0;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);	
+}
+.query-box {
+  width: 50%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  height: 90px;
+  opacity: 0.85;
+  margin-top: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
+.reply-box {
+    width: 50%;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    height: 90px;
+    margin-top: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+    .reply-box img {
+        float: right;
+        margin-top: 4px;
+        margin-right: 10px;
+    }
+    .reply-box p {
+        margin-left:4px;
+        text-align:left;
+    }
+.reservation {
+	margin: 0;
+}
+.reservation p {
+	font-family: arial;
+	font-size: 20px;
+}
+.reservation-main-content {
+    margin-top: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display:block;
+}
+    .reservation-main-content img {
+        display: inline-block;
+        float:left;
+    }
+    .reservation-main-content fieldset {
+        width: 400px;
+        display: inline-block;
+        float: right;
+        margin-right: 100px;
+        margin-right: 50px;
+    }
+.reservation-result {
+    color: #F1C40F;
+    font-family: Arial;
+    text-align: center;
+    margin-left: 0;
+}
+.reservation-result td {
+    padding-left: 11px;
+    padding-right: 20px;
+}
+.search-content {
+  display: block;
+  width: 60%;
+  position: relative;
+  margin: auto;
+}
+.selection {
+  width: 630px;
+  margin-top: 12px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slideshow-container {
+  width: 60%;
+  position: relative;
+  margin: auto;
+}
+#form p {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "arial";
+  color: #F1C40F;
+  margin-bottom: 10px;
+}
+#landmarks_title {
+	text-align: center;
+	font-family: arial;
+	font-size: 36px;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+#pokedex-input {
+  margin-left: 470px; 
+  margin-top: 196px; 
+  padding: 15px;
+  font-size: auto;
+  font-family: arial;
+  text-align: center;
+  border-radius: 5px;
+}
+#pokedex-submit {
+  margin-left: 470px; 
+  margin-top: 145px; 
+  padding-left: 15px; 
+  padding-right: 15px; 
+  padding-top: 8px; 
+  padding-bottom: 8px; 
+  border-radius: 5px;
+}
+#search-bar {
+  float: right;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: "arial";
+  text-align: center;
+  width: 325px;
+}
+#search-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#search-info {
+  font-size: 18px;
+  text-align: left;
+  text-indent: 50px;
+}
+#search-title {
+  text-align: center;  
+  font-size: 32px;
+  font-family: "arial";
+}
+#reservation-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px; 
+    padding-bottom: 10px;
+}

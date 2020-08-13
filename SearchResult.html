@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Pokemon Hotels</title>
+  </head>
+
+  <body>
+      <div class="bar">
+          <a href="Login.html">Log in</a>
+          <a href="index.html">Home</a>
+          <a href="Pokedex.html">Pokedex</a>
+          <input id="search-bar" type="text" placeholder="Search . . .">
+      </div>
+	<h2 id="search-title">Cove Lily Motel</h2>
+	<div class="search-content">
+	  <img id="search-image" src="images/lilycove2.jpg" alt="Search image" height="250" width="250">
+	  <p id="search-info">While left vacant during the encampment of Team Magma and Team Aqua, the Cove Lily Motel and the rest of Lily Cove City were saved by an unknown trainer. The Cove Lily Motel has two floors. On the first floor, one can find the kitchen to the left, some chairs and tables for a common area, a television, and sometimes the motel's friendly neighborhood Kecleon. There is also a vending machine on the first floor. On the second floor, one can find the guest rooms. We have several rooms available, while one room is always reserved by the graphic artist, the programmer, and the game designer of the GameFreak team in the Hoenn region. Some of the nearby landmarks include the Lily Cove Museum, the Hoenn Safari Zone, Mt. Pyre, and the recently deserted hideout of Team Magma and Team Aqua.</p>
+	</div>
+      <br />
+      <div class="reservation"> <p><a href="Reservation.html">Reserve a Room Today!</a></p></div>
+	<br>
+	<h2 id="landmarks_title">Nearby Landmarks</h2>
+	<div class="slideshow-container">
+	  <div class="mySlides fade">
+		<img src="images/mt_pyre.jpg" alt="Mt. Pyre" style="height: 300px; width: 100%;">
+		<div class="caption-text"><a href="" style="text-decoration: none;">Mt. Pyre</a></div>
+	  </div>
+	  <div class="mySlides fade">
+		<img src="images/lily_cove_museum.jpg" alt="Lily Cove Museum" style="height: 300px; width: 100%;">
+		<div class="caption-text"><a href="" style="text-decoration: none;">Lily Cove Art Museum</a></div>
+	  </div>
+	  <div class="mySlides fade">
+		<img src="images/hoenn_safari.png" alt="Hoenn Safari" style="height: 300px; width: 100%;">
+		<div class="caption-text"><a href="" style="text-decoration: none;">Hoenn Safari Zone</a></div>
+	  </div>
+	  <div class="mySlides fade">
+		<img src="images/mossdeep_city.png" alt="Mossdeep City" style="height: 300px; width: 100%;">
+		<div class="caption-text"><a href="" style="text-decoration: none;">Mossdeep City</a></div>
+	  </div>
+	  <div class="mySlides fade">
+		<img src="images/mauville.png" alt="Mauville City" style="height: 300px; width: 100%;">
+		<div class="caption-text"><a href="" style="text-decoration: none;">Mauville City</a></div>
+	  </div>
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<div style="text-align: center;">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span> 
+	  <span class="dot" onclick="currentSlide(5)"></span>	  
+	</div>
+	<br>
+	<div class="contact-info">
+	  <p>Contact Info</p>
+	</div>
+	
+	<script>
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+  </body>

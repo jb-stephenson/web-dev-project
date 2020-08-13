@@ -1,0 +1,101 @@
+﻿<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="stylesheet.css">
+	<script src="canvasjs.min.js"></script>
+	<script>
+	  window.onload = function () {
+		CanvasJS.addColorSet("statShades",["#52d411",
+										   "#83d411",
+										   "#35d411",
+										   "#9ad411",
+										   "#86d411",
+										   "#9ad411"]);
+	  
+		var chart = new CanvasJS.Chart("chartContainer",{
+			animationEnabled: true,
+			colorSet: "statShades",
+			width: 425,
+			height: 250,
+			axisX: {
+				interval: 1
+			},
+			data: [{
+				type: "bar",
+				name: "stats",
+				axisYType: "secondary",
+				indexLabel: "{y}",
+				indexLabelPlacement: "outside",
+				indexLabelOrientation: "horizontal",
+				dataPoints: [
+					{y: 100, label: "Speed"},
+					{y: 85, label: "Special Defense"},
+					{y: 109, label: "Special Attack"},
+					{y: 78, label: "Defense"},
+					{y: 84, label: "Attack"},
+					{y: 78, label: "Health"}
+				]
+			}]
+		});
+		chart.render();
+		var x = document.getElementsByClassName("canvasjs-chart-credit");
+		x[0].style = "display: none";
+	  }
+	</script>
+	<title>Pokemon Hotels</title>
+  </head>
+  
+  <body>
+      <div class="bar">
+          <a href="Login.html">Log in</a>
+          <a href="index.html">Home</a>
+          <a href="Pokedex.html">Pokedex</a>
+          <input id="search-bar" type="text" placeholder="Search . . .">
+          <script>
+              var input = document.getElementById("search-bar");
+              input.addEventListener("keyup", function (event) {
+                  if (event.keyCode === 13) {
+                      document.location.href = "SearchResult.html";
+                  }
+              });
+          </script>
+      </div>
+	<br>
+	<div class="pokemon-content">
+	  <h2 class="pokedex-title">Charizard</h2>
+	  <div style="margin: auto; position: relative; height: 300px; width: 60%;">
+	    <div class="pokemon-img">
+	      <img src="images/charizard.png" alt="Charizard" height="325" width="325">
+	    </div>
+		<div class="pokemon-stats" id="chartContainer">
+		</div>
+	  </div>
+	  <div class="pokemon-description">
+	    <p style="padding-left: 20px; text-align: left; text-indent: 50px;">
+		Its fiery breath reaches incredible temperatures. It can quickly melt 
+		glaciers weighing 10,000 tons. If Charizard becomes furious, the flame 
+		at the tip of its tail flares up in a whitish-blue color. It uses its 
+		wings to fly high. The temperature of its fire increases as it gains 
+		experience in battle. Charizard flies around the sky in search of powerful 
+		opponents. It breathes fire of such great heat that it melts anything. 
+		However, it never turns its fiery breath on any opponent weaker than 
+		itself. Its wings can carry this Pokémon close to an altitude of 4,600 
+		feet.
+		</p>
+	  </div><br><br>
+	  <h2 class="pokedex-title">Evolutionary Line</h2>
+	  <div class="evolution">
+	    <img src="images/charmander.png" alt="Charmander" height="125" width="125" title="charmander">
+		<img src="images/arrow.png" alt="arrow" style="padding-bottom: 60px;" height="50" width="50">
+		<img src="images/charmeleon.png" alt="Charmeleon" height="150" width="150" title="charmeleon">
+		<img src="images/arrow.png" alt="arrow" style="padding-bottom: 60px;" height="50" width="50">
+		<img src="images/charizard.png" alt="Charizard" height="200" width="200" title="charizard">
+	  </div>
+	</div>
+	<br>
+	<div class="contact-info">
+	  <p>Contact Info</p>
+	</div>
+  </body>
+</html>

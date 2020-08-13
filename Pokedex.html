@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="stylesheet.css">
+	<title>Pokemon Hotels</title>
+  </head>
+  
+  <body>
+      <div class="bar">
+          <a href="Login.html">Log in</a>
+          <a href="index.html">Home</a>
+          <a href="#">Pokedex</a>
+          <input id="search-bar" type="text" placeholder="Search . . .">
+          <script>
+            var input = document.getElementById("search-bar");
+            input.addEventListener("keyup", function (event) {
+                if (event.keyCode === 13) {
+                    document.location.href = "SearchResult.html";
+                }
+            });
+          </script>
+      </div>
+	<br>
+    <div class="pokedex">
+	  <form class="pokedex-form" action="PokedexResult.html">
+	    <input id="pokedex-input" type="text" name="name" autofocus><br>
+		<input id="pokedex-submit" type="submit" value="submit">
+	  </form>
+	</div>
+	<br>
+	<div class="contact-info">
+	  <p>Contact Info</p>
+	</div>
+  </body>
+</html>
